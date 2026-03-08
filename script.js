@@ -1,5 +1,5 @@
 
-function playGame(rounds) {
+function playGame(rounds = 5) {
     let computerScore = 0;
     let humanScore = 0;
 
