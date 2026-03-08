@@ -16,8 +16,11 @@ function playGame(rounds) {
     let winner;
     if (computerScore > humanScore){
         winner = "Computer";
-    }else {
+    }else if (humanScore > computerScore) {
         winner = name;
+    }else { 
+        alert('It is a draw. Play again')
+        return;
     }
     console.log(`The winner is ${winner}`)
     alert(`The winner is ${winner}`)
